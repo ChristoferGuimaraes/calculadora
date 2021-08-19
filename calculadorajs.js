@@ -1,35 +1,36 @@
 class Calculator {
-    constructor() {
+  constructor() {}
 
+  equal() {
+    let result = document.querySelector("#result").innerHTML;
+    if (result.includes("!")) {
+      result = result.slice(0, -1);
+      this.factorial(result);
+      return;
     }
-
-    equal() {
-        let result = document.querySelector('#result').innerHTML;
-        if (result) {
-            document.querySelector('#result').innerHTML = eval(result);
-        } else {
-            document.querySelector('#result').innerHTML = '0';
-        }
-
+    if (result) {
+      document.querySelector("#numbers").innerHTML = eval(result);
+      return;
     }
+    this.clean();
+  }
 
-    insert(num) {
-        document.querySelector('#result').innerHTML += `${num}`;
-    }
+  insert(num) {
+    document.querySelector("#result").innerHTML += `${num}`;
+  }
 
-    clean() {
-        document.querySelector('#result').innerHTML = '';
-    }
+  clean() {
+    document.querySelector("#result").innerHTML = "";
+    document.querySelector("#numbers").innerHTML = "";
+  }
 
-    factorial() {
-        let res = document.querySelector('#result').innerHTML;
-        let fat = 1
-        for (let i=0; i<res; i++) {
-            fat *= (res-i);
-        }
-        document.querySelector('#result').innerHTML = `${res}! = ${fat}`
-        
+  factorial(result) {
+    let fat = 1;
+    for (let i = 0; i < result; i++) {
+      fat *= result - i;
     }
+    document.querySelector("#numbers").innerHTML = `${fat}`;
+  }
 }
 
 let calculator = new Calculator();

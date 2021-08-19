@@ -1,51 +1,54 @@
 * {
-    margin: auto;
-
+  margin: auto;
 }
 
 #table {
-    margin-top: -4px;
-    background-color:grey;
-    border-radius: 3px;
-    padding: 4px;
+  margin-top: -4px;
+  background-color: grey;
+  border-radius: 3px;
+  padding: 4px;
 }
 
 #resultscreen {
-    margin-top: 30px;
-    padding: 4px;
-    height: 37px;
-    background-color: grey;
-    width: 138px;
-    border-radius: 2px;
-    
+  margin-top: 30px;
+  padding: 4px;
+  height: 37px;
+  background-color: grey;
+  width: 138px;
+  border-radius: 2px;
 }
 
 #result {
-    height: 35px;
-    background-color: rgb(255, 255, 255);
-    width: 131px;
-    margin-top: 3px;
-    border-radius: 3px;
-    
+  height: 35px;
+  background-color: rgb(255, 255, 255);
+  width: 131px;
+  margin-top: 3px;
+  border-radius: 3px;
+  font-size: 14px;
+  color: rgba(53, 53, 53, 0.856);
+}
+
+#numbers {
+  margin-top: -19px;
+  padding-left: 4px;
+  font-size: 17px;
 }
 
 .inputs {
-    padding: 5px;
-    margin: auto;
-    width: 30px;
-    height: 30px;
-    border-radius: 2px;
-    border: 0;
+  padding: 5px;
+  margin: auto;
+  width: 30px;
+  height: 30px;
+  border-radius: 2px;
+  border: 0;
 }
 
 .inputs:hover {
-    background-color: rgba(78, 78, 78, 0.541);
+  background-color: rgba(78, 78, 78, 0.541);
 }
 
 footer {
-    font-size: 10px;
-    text-align: center;
-    margin-top: 10px;
+  font-size: 10px;
+  text-align: center;
+  margin-top: 10px;
 }
-
-
