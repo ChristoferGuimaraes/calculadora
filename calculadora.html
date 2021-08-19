@@ -5,51 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
+    <link rel="stylesheet" href="calculadoracss.css">
 </head>
 <body>
-    <table>
-        <div id="result">
-            
+    <table id="table">
+        <div id="resultscreen">
+            <div id="result">
+
+            </div>
         </div>
         <tbody>
            
-           <tr>
-                <td>
-                    <input type="button" id="7" value="7">
-                    <input type="button" id="8" value="8">
-                    <input type="button" id="9" value="9">
-                    <input type="button" id="+" value="+">
+           <tr class="tr">
+                <td class="td">
+                    <input type="button" id="seven" value="7" class="inputs">
+                    <input type="button" id="eight" value="8" class="inputs">
+                    <input type="button" id="nine" value="9" class="inputs">
+                    <input type="button" id="add" value="+" class="inputs">
                 </td>
             </tr>
             
-            <tr>
-                <td>
-                    <input type="button" id="4" value="4">      
-                    <input type="button" id="5" value="5">
-                    <input type="button" id="6" value="6">
-                    <input type="button" id="-" value="-">
+            <tr class="tr">
+                <td class="td">
+                    <input type="button" id="four" value="4" class="inputs">      
+                    <input type="button" id="five" value="5" class="inputs">
+                    <input type="button" id="six" value="6" class="inputs">
+                    <input type="button" id="sub" value="-" class="inputs">
                 </td>
             </tr>
             
-            <tr>
-                <td>
-                    <input type="button" id="1" value="1">
-                    <input type="button" id="2" value="2">
-                    <input type="button" id="3" value="3">
-                    <input type="button" id="x!" value="x!">
+            <tr class="tr">
+                <td class="td">
+                    <input type="button" id="one" value="1" class="inputs">
+                    <input type="button" id="two" value="2" class="inputs">
+                    <input type="button" id="tree" value="3" class="inputs">
+                    <input type="button" id="fat" value="x!" class="inputs">
                 </td>
             </tr>
             
-            <tr>
-                <td>
-                    <input type="button" id="/" value="/">
-                    <input type="button" id="0" value="0">
-                    <input type="button" id="*" value="*">
-                    <input type="button" id="=" value="=">
+            <tr class="tr">
+                <td class="td">
+                    <input type="button" id="divi" value="/" class="inputs">
+                    <input type="button" id="zero" value="0" class="inputs">
+                    <input type="button" id="mult" value="*" class="inputs">
+                    <input type="button" id="equal" value="=" class="inputs" onclick="calculator.equal()">
                 </td>
             </tr>
 
         </tbody>
-</table>
+    </table>
 </body>
+<script src="calculadorajs.js"></script>
 </html>

@@ -1,0 +1,33 @@
+* {
+    margin: auto;
+
+}
+
+#table {
+   background-color:grey;
+   
+}
+
+#resultscreen {
+    padding-top: 8px;
+    margin-top: 60px;
+    height: 35px;
+    background-color: grey;
+    width: 138px;
+}
+
+#result {
+    height: 30px;
+    background-color: rgb(255, 255, 255);
+    width: 120px;
+    
+}
+
+.inputs {
+    padding: 5px;
+    margin: auto;
+    width: 30px;
+}
+
+
+
