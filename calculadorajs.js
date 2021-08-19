@@ -25,7 +25,7 @@ class Calculator {
         let res = document.querySelector('#result').innerHTML;
         let fat = 1
         for (let i=0; i<res; i++) {
-            fat = fat*(res-i);
+            fat *= (res-i);
         }
         document.querySelector('#result').innerHTML = `${res}! = ${fat}`
         

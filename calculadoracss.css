@@ -8,7 +8,6 @@
     background-color:grey;
     border-radius: 3px;
     padding: 4px;
-   
 }
 
 #resultscreen {
@@ -18,6 +17,7 @@
     background-color: grey;
     width: 138px;
     border-radius: 2px;
+    
 }
 
 #result {
@@ -26,6 +26,7 @@
     width: 131px;
     margin-top: 3px;
     border-radius: 3px;
+    
 }
 
 .inputs {

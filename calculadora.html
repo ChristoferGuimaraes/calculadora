@@ -43,11 +43,11 @@
                 <td class="td"><input type="button" id="one" value="1" class="inputs" onclick="calculator.insert('1')"></td>
                 <td class="td"><input type="button" id="two" value="2" class="inputs" onclick="calculator.insert('2')"></td>
                 <td class="td"><input type="button" id="tree" value="3" class="inputs" onclick="calculator.insert('3')"></td>
-                <td class="td" rowspan="2"><input type="button" id="zero" value="0" class="inputs" style="height: 64px;"  onclick="calculator.insert('0')"></td>
+                <td class="td" rowspan="2"><input type="button" id="equal" value="=" class="inputs" style="height: 64px;" onclick="calculator.equal('=')"></td>
             </tr>
             
             <tr class="tr">
-                <td class="td" colspan="2"><input type="button" id="equal" value="=" class="inputs" style="width: 64px;" onclick="calculator.equal('=')"></td>
+                <td class="td" colspan="2"><input type="button" id="zero" value="0" class="inputs" style="width: 64px;" onclick="calculator.insert('0')" ></td>
                 <td class="td"><input type="button" id="dot" value="." class="inputs" onclick="calculator.insert('.')"></td>
             </tr>
 
