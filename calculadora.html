@@ -11,49 +11,51 @@
     <table id="table">
         <div id="resultscreen">
             <div id="result">
-
             </div>
         </div>
         <tbody>
-           
+            <tr class="tr">
+                
+                <td class="td"><input type="button" id="errase" value="C" class="inputs" onclick="calculator.clean('')"></td>
+                <td class="td"><input type="button" id="divi" value="/" class="inputs" onclick="calculator.insert('/')"></td>
+                <td class="td"><input type="button" id="mult" value="x" class="inputs" onclick="calculator.insert('*')"></td>
+                <td class="td"><input type="button" id="fat" value="!" class="inputs" onclick="calculator.factorial()"></td>
+                
+            </tr>
+
            <tr class="tr">
-                <td class="td">
-                    <input type="button" id="seven" value="7" class="inputs">
-                    <input type="button" id="eight" value="8" class="inputs">
-                    <input type="button" id="nine" value="9" class="inputs">
-                    <input type="button" id="add" value="+" class="inputs">
-                </td>
+                
+                <td class="td"><input type="button" id="seven" value="7" class="inputs" onclick="calculator.insert('7')"></td>
+                <td class="td"><input type="button" id="eight" value="8" class="inputs" onclick="calculator.insert('8')"></td>
+                <td class="td"><input type="button" id="nine" value="9" class="inputs" onclick="calculator.insert('9')"></td>
+                <td class="td"><input type="button" id="add" value="+" class="inputs" onclick="calculator.insert('+')"></td>
+                
             </tr>
             
             <tr class="tr">
-                <td class="td">
-                    <input type="button" id="four" value="4" class="inputs">      
-                    <input type="button" id="five" value="5" class="inputs">
-                    <input type="button" id="six" value="6" class="inputs">
-                    <input type="button" id="sub" value="-" class="inputs">
-                </td>
+                <td class="td"><input type="button" id="four" value="4" class="inputs" onclick="calculator.insert('4')"></td>    
+                <td class="td"><input type="button" id="five" value="5" class="inputs" onclick="calculator.insert('5')"></td>
+                <td class="td"><input type="button" id="six" value="6" class="inputs" onclick="calculator.insert('6')"></td>
+                <td class="td"><input type="button" id="sub" value="-" class="inputs" onclick="calculator.insert('-')"></td>
+            </tr>
+            
+            <tr class="tr">                
+                <td class="td"><input type="button" id="one" value="1" class="inputs" onclick="calculator.insert('1')"></td>
+                <td class="td"><input type="button" id="two" value="2" class="inputs" onclick="calculator.insert('2')"></td>
+                <td class="td"><input type="button" id="tree" value="3" class="inputs" onclick="calculator.insert('3')"></td>
+                <td class="td" rowspan="2"><input type="button" id="zero" value="0" class="inputs" style="height: 64px;"  onclick="calculator.insert('0')"></td>
             </tr>
             
             <tr class="tr">
-                <td class="td">
-                    <input type="button" id="one" value="1" class="inputs">
-                    <input type="button" id="two" value="2" class="inputs">
-                    <input type="button" id="tree" value="3" class="inputs">
-                    <input type="button" id="fat" value="x!" class="inputs">
-                </td>
-            </tr>
-            
-            <tr class="tr">
-                <td class="td">
-                    <input type="button" id="divi" value="/" class="inputs">
-                    <input type="button" id="zero" value="0" class="inputs">
-                    <input type="button" id="mult" value="*" class="inputs">
-                    <input type="button" id="equal" value="=" class="inputs" onclick="calculator.equal()">
-                </td>
+                <td class="td" colspan="2"><input type="button" id="equal" value="=" class="inputs" style="width: 64px;" onclick="calculator.equal('=')"></td>
+                <td class="td"><input type="button" id="dot" value="." class="inputs" onclick="calculator.insert('.')"></td>
             </tr>
 
         </tbody>
     </table>
+    <footer>
+        &copy Christofer Guimarães
+    </footer>
 </body>
 <script src="calculadorajs.js"></script>
 </html>
