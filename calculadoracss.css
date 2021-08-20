@@ -60,4 +60,16 @@ footer {
   text-align: center;
   margin-top: -4px;
   color:white;
+  font-weight: bold;
 }
+
+#one, #two, #tree, #four, #five, #six, #seven, #eight, #nine, #zero {
+  background-color: rgb(201, 201, 201);
+  transition: all ease 0.3s;
+}
+
+#one:hover, #two:hover, #tree:hover, #four:hover, #five:hover, #six:hover, #seven:hover, #eight:hover, #nine:hover, #zero:hover {
+  background-color: rgba(78, 78, 78, 0.541);
+
+}
+
