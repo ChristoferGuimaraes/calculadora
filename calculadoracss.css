@@ -1,46 +1,54 @@
 * {
   margin: auto;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-#table {
-  margin-top: -4px;
-  background-color: grey;
-  border-radius: 3px;
-  padding: 4px;
+#calculator {
+  background-color: rgb(146, 146, 146);
+  width: 148px;
+  height: 242px;
+  margin-top: 100px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.336);
+  padding-top: 8px;
 }
 
 #resultscreen {
-  margin-top: 30px;
-  padding: 4px;
-  height: 37px;
-  background-color: grey;
-  width: 138px;
+  width: 116px;
+    height: 25px;
+  margin-top: 5px;
+  padding: 8px;
   border-radius: 2px;
-}
-
-#result {
-  height: 35px;
   background-color: rgb(255, 255, 255);
-  width: 131px;
-  margin-top: 3px;
-  border-radius: 3px;
-  font-size: 14px;
-  color: rgba(53, 53, 53, 0.856);
 }
 
 #numbers {
-  margin-top: -19px;
-  padding-left: 4px;
+  border-radius: 3px;
+  font-size: 12px;
+  color: rgba(53, 53, 53, 0.856);
+  margin-top: -7px;
+}
+
+#result {
   font-size: 17px;
+  height: 2px;
+  width: 131px;
+}
+
+#table {
+  margin-bottom: 5px;
+  margin-top: 10px;
 }
 
 .inputs {
   padding: 5px;
-  margin: auto;
   width: 30px;
   height: 30px;
   border-radius: 2px;
   border: 0;
+  transition: all ease 0.3s;
+  font-weight:bold;
 }
 
 .inputs:hover {
@@ -48,7 +56,8 @@
 }
 
 footer {
-  font-size: 10px;
+  font-size: 7px;
   text-align: center;
-  margin-top: 10px;
+  margin-top: -4px;
+  color:white;
 }

@@ -1,35 +1,35 @@
 class Calculator {
   constructor() {}
 
-  equal() {
-    let result = document.querySelector("#result").innerHTML;
-    if (result.includes("!")) {
-      result = result.slice(0, -1);
-      this.factorial(result);
+  equal () {
+    let numbers = document.querySelector("#numbers").innerHTML;
+    if (numbers.includes("!")) {
+        numbers = numbers.slice(0, -1);
+      this.factorial(numbers);
       return;
     }
-    if (result) {
-      document.querySelector("#numbers").innerHTML = eval(result);
+    if (numbers) {
+      document.querySelector("#result").innerHTML = eval(numbers);
       return;
     }
     this.clean();
   }
 
-  insert(num) {
-    document.querySelector("#result").innerHTML += `${num}`;
-  }
+  insert = num => 
+    document.querySelector("#numbers").innerHTML += `${num}`;
+  
 
   clean() {
-    document.querySelector("#result").innerHTML = "";
     document.querySelector("#numbers").innerHTML = "";
+    document.querySelector("#result").innerHTML = "";
   }
 
-  factorial(result) {
+  factorial(numbers) {
     let fat = 1;
-    for (let i = 0; i < result; i++) {
-      fat *= result - i;
+    for (let i = 0; i < numbers; i++) {
+      fat *= numbers - i;
     }
-    document.querySelector("#numbers").innerHTML = `${fat}`;
+    document.querySelector("#result").innerHTML = `${fat}`;
   }
 }
 
